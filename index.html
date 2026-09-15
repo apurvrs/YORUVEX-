@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>YORUVEX — Anime Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="#" class="brand">
+        <img src="yoruvex.png" alt="YORUVEX Logo">
+        <span>Yoru<span>Vex</span></span>
+    </a>
+
+    <nav id="navMenu">
+        <a href="#home" class="active">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#categories">Categories</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-right">
+
+        <div class="search">
+            <input type="text" placeholder="Search products...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <button class="nav-icon">
+            <i class="fa-regular fa-user"></i>
+        </button>
+
+        <button class="nav-icon cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <small>0</small>
+        </button>
+
+        <button class="menu-btn" onclick="toggleMenu()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            ANIME <b>×</b> MERCH <b>×</b> GAMING
+        </div>
+
+        <h1>
+            YORU<span>VEX</span>
+        </h1>
+
+        <h2>
+            YOUR ANIME WORLD,<br>
+            ONE STORE.
+        </h2>
+
+        <p>
+            Premium anime merchandise, stylish apparel,
+            collectibles and more. Step into the world of
+            YORUVEX where your favorite anime never ends.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#shop" class="btn primary">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Shop Now
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#categories" class="btn secondary">
+                Explore Store
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <div class="features">
+
+            <div>
+                <i class="fa-solid fa-truck-fast"></i>
+                <span>
+                    <b>Fast Delivery</b>
+                    Across India
+                </span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>
+                    <b>Secure Payments</b>
+                    100% Safe
+                </span>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-star"></i>
+                <span>
+                    <b>Premium Quality</b>
+                    Trusted by Anime Fans
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- HERO ART -->
+
+    <div class="hero-art">
+
+        <div class="moon"></div>
+
+        <div class="anime-silhouette">
+
+            <div class="head"></div>
+
+            <div class="hair"></div>
+
+            <div class="body"></div>
+
+            <div class="eye"></div>
+
+        </div>
+
+        <div class="crow crow1">◆</div>
+        <div class="crow crow2">◆</div>
+        <div class="crow crow3">◆</div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="section" id="categories">
+
+    <div class="section-title">
+
+        <span></span>
+
+        <h2>SHOP BY CATEGORY</h2>
+
+        <span></span>
+
+    </div>
+
+    <div class="categories">
+
+        <div class="category">
+            <i class="fa-solid fa-shirt"></i>
+            <h3>Apparel</h3>
+            <p>Hoodies • T-Shirts • More</p>
+        </div>
+
+        <div class="category">
+            <i class="fa-solid fa-user-astronaut"></i>
+            <h3>Figures</h3>
+            <p>Action Figures • Statues</p>
+        </div>
+
+        <div class="category">
+            <i class="fa-regular fa-image"></i>
+            <h3>Posters</h3>
+            <p>Wall Art • Canvas</p>
+        </div>
+
+        <div class="category">
+            <i class="fa-solid fa-key"></i>
+            <h3>Accessories</h3>
+            <p>Keychains • Rings • More</p>
+        </div>
+
+        <div class="category">
+            <i class="fa-solid fa-mug-hot"></i>
+            <h3>Merchandise</h3>
+            <p>Mugs • Bottles • Stickers</p>
+        </div>
+
+        <div class="category">
+            <i class="fa-solid fa-gamepad"></i>
+            <h3>Gaming</h3>
+            <p>Gaming Gear • Extras</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="section products-section" id="shop">
+
+    <div class="section-heading">
+
+        <div class="section-title">
+            <span></span>
+            <h2>FEATURED PRODUCTS</h2>
+            <span></span>
+        </div>
+
+        <a href="#">View All →</a>
+
+    </div>
+
+
+    <div class="products">
+
+        <!-- PRODUCT 1 -->
+
+        <article class="product">
+
+            <div class="product-image">
+
+                <div class="badge">
+                    ★ BEST SELLER
+                </div>
+
+                <button class="heart">
+                    ♡
+                </button>
+
+                <div class="fake-product hoodie">
+                    ☁
+                </div>
+
+            </div>
+
+            <div class="product-info">
+
+                <small>APPAREL</small>
+
+                <h3>Akatsuki Hoodie</h3>
+
+                <div class="price">
+                    ₹1,999
+                    <del>₹2,499</del>
+                </div>
+
+                <button class="add-cart" onclick="addCart()">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 2 -->
+
+        <article class="product">
+
+            <div class="product-image">
+
+                <button class="heart">
+                    ♡
+                </button>
+
+                <div class="fake-product figure">
+                    Y
+                </div>
+
+            </div>
+
+            <div class="product-info">
+
+                <small>FIGURES</small>
+
+                <h3>Anime Character Figure</h3>
+
+                <div class="price">
+                    ₹3,499
+                    <del>₹4,999</del>
+                </div>
+
+                <button class="add-cart" onclick="addCart()">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 3 -->
+
+        <article class="product">
+
+            <div class="product-image">
+
+                <button class="heart">
+                    ♡
+                </button>
+
+                <div class="fake-product poster">
+                    YORUVEX
+                </div>
+
+            </div>
+
+            <div class="product-info">
+
+                <small>POSTERS</small>
+
+                <h3>Anime Premium Poster</h3>
+
+                <div class="price">
+                    ₹799
+                    <del>₹1,299</del>
+                </div>
+
+                <button class="add-cart" onclick="addCart()">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 4 -->
+
+        <article class="product">
+
+            <div class="product-image">
+
+                <button class="heart">
+                    ♡
+                </button>
+
+                <div class="fake-product keychain">
+                    ★
+                </div>
+
+            </div>
+
+            <div class="product-info">
+
+                <small>ACCESSORIES</small>
+
+                <h3>Anime Keychain</h3>
+
+                <div class="price">
+                    ₹499
+                    <del>₹799</del>
+                </div>
+
+                <button class="add-cart" onclick="addCart()">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PROMO ================= -->
+
+<section class="promo">
+
+    <div>
+
+        <small>LIMITED TIME</small>
+
+        <h2>
+            ANIME MERCH<br>
+            <span>COLLECTION</span>
+        </h2>
+
+        <p>
+            Exclusive designs • Limited stock •
+            Don't miss out!
+        </p>
+
+        <a href="#shop" class="btn primary">
+            Shop Collection →
+        </a>
+
+    </div>
+
+    <div class="promo-symbol">
+        夜
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="trust">
+
+    <div>
+        <i class="fa-solid fa-crown"></i>
+        <span>
+            <b>Premium Quality</b>
+            Only the best for you
+        </span>
+    </div>
+
+    <div>
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>
+            <b>Secure Checkout</b>
+            100% Safe & Encrypted
+        </span>
+    </div>
+
+    <div>
+        <i class="fa-solid fa-headset"></i>
+        <span>
+            <b>24/7 Support</b>
+            We're always here
+        </span>
+    </div>
+
+    <div>
+        <i class="fa-solid fa-globe"></i>
+        <span>
+            <b>Worldwide Shipping</b>
+            Coming Soon
+        </span>
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer id="contact">
+
+    <div class="footer-brand">
+
+        <img src="yoruvex.png">
+
+        <h2>Yoru<span>Vex</span></h2>
+
+        <p>
+            Anime isn't just a genre.<br>
+            It's a lifestyle.
+        </p>
+
+        <div class="socials">
+
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+        </div>
+
+    </div>
+
+
+    <div>
+        <h3>Quick Links</h3>
+
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+
+    <div>
+        <h3>Categories</h3>
+
+        <a href="#">Apparel</a>
+        <a href="#">Figures</a>
+        <a href="#">Posters</a>
+        <a href="#">Accessories</a>
+        <a href="#">Gaming</a>
+    </div>
+
+
+    <div class="newsletter">
+
+        <h3>Newsletter</h3>
+
+        <p>
+            Get exclusive offers and latest updates.
+        </p>
+
+        <div class="email-box">
+
+            <input
+                type="email"
+                placeholder="Enter your email address"
+            >
+
+            <button>
+                →
+            </button>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<div class="copyright">
+    © 2026 YORUVEX. All rights reserved.
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
