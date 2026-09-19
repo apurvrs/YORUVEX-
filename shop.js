@@ -153,11 +153,24 @@ function renderProducts(list) {
     list.forEach((product, index) => {
 
         const card =
-            document.createElement("article");
+    document.createElement("article");
 
-        card.className = "product";
+card.className = "product";
 
-        card.innerHTML = `
+card.addEventListener("click", function (e) {
+
+    if (
+        e.target.closest(".add-cart") ||
+        e.target.closest(".wishlist")
+    ) {
+        return;
+    }
+
+    window.location.href = "product.html";
+
+});
+
+card.innerHTML = `
 
             <div class="product-image">
 
