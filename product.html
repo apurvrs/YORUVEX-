@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product — YORUVEX</title>
+
+    <link rel="stylesheet" href="product.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+    <a href="index.html" class="brand">
+
+        <img src="logo.png">
+
+        <span>
+            Yoru<span>Vex</span>
+        </span>
+
+    </a>
+
+    <nav id="navMenu">
+
+        <a href="index.html">Home</a>
+
+        <a href="shop.html">Shop</a>
+
+        <a href="index.html#categories">Categories</a>
+
+        <a href="#">About</a>
+
+        <a href="#">Contact</a>
+
+    </nav>
+
+    <div class="nav-right">
+
+        <div class="search">
+
+            <input
+                id="search"
+                placeholder="Search products..."
+            >
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+
+        <button class="nav-icon">
+            <i class="fa-regular fa-user"></i>
+        </button>
+
+        <button class="nav-icon cart">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <small id="cartCount">0</small>
+
+        </button>
+
+        <button
+            class="menu-btn"
+            onclick="toggleMenu()"
+        >
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- BREADCRUMB -->
+
+<div class="breadcrumb">
+
+    <a href="index.html">Home</a>
+
+    <span>/</span>
+
+    <a href="shop.html">Shop</a>
+
+    <span>/</span>
+
+    <b>Product</b>
+
+</div>
+
+
+<!-- PRODUCT -->
+
+<main class="product-page">
+
+
+    <!-- LEFT -->
+
+    <section class="gallery">
+
+        <div class="main-image">
+
+            <span class="sale">
+                -20%
+            </span>
+
+            <button
+                class="wish"
+                onclick="toggleWishlist(this)"
+            >
+                ♡
+            </button>
+
+            <div class="anime-art">
+                Y
+            </div>
+
+        </div>
+
+
+        <div class="thumbnail-row">
+
+            <button class="thumbnail active">
+                Y
+            </button>
+
+            <button class="thumbnail">
+                夜
+            </button>
+
+            <button class="thumbnail">
+                月
+            </button>
+
+            <button class="thumbnail">
+                V
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- RIGHT -->
+
+    <section class="details">
+
+        <div class="category">
+            YORUVEX • APPAREL
+        </div>
+
+        <h1>
+            Akatsuki Premium
+            Oversized Hoodie
+        </h1>
+
+        <div class="rating">
+
+            <span>
+                ★★★★★
+            </span>
+
+            <b>
+                4.9
+            </b>
+
+            <a href="#reviews">
+                128 Reviews
+            </a>
+
+        </div>
+
+
+        <div class="price">
+
+            <strong>
+                ₹1,999
+            </strong>
+
+            <del>
+                ₹2,499
+            </del>
+
+            <span>
+                SAVE ₹500
+            </span>
+
+        </div>
+
+
+        <p class="description">
+
+            Enter the YORUVEX world with our
+            premium anime-inspired oversized hoodie.
+            Designed for comfort, style and true
+            anime fans.
+
+        </p>
+
+
+        <!-- OPTIONS -->
+
+        <div class="option">
+
+            <div class="option-head">
+
+                <b>
+                    Size
+                </b>
+
+                <a href="#">
+                    Size Guide
+                </a>
+
+            </div>
+
+            <div class="sizes">
+
+                <button>S</button>
+                <button class="selected">M</button>
+                <button>L</button>
+                <button>XL</button>
+                <button>XXL</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUANTITY -->
+
+        <div class="buy-row">
+
+            <div class="quantity">
+
+                <button onclick="changeQuantity(-1)">
+                    −
+                </button>
+
+                <span id="quantity">
+                    1
+                </span>
+
+                <button onclick="changeQuantity(1)">
+                    +
+                </button>
+
+            </div>
+
+
+            <button
+                class="add-cart"
+                onclick="addToCart()"
+            >
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                ADD TO CART
+
+            </button>
+
+        </div>
+
+
+        <button
+            class="buy-now"
+            onclick="buyNow()"
+        >
+
+            BUY NOW
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+
+        <!-- DELIVERY -->
+
+        <div class="delivery">
+
+            <div>
+
+                <i class="fa-solid fa-truck-fast"></i>
+
+                <span>
+
+                    <b>Fast Delivery</b>
+
+                    Estimated delivery
+                    3–7 business days
+
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <span>
+
+                    <b>Secure Payment</b>
+
+                    Safe & encrypted checkout
+
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <i class="fa-solid fa-rotate-left"></i>
+
+                <span>
+
+                    <b>Easy Returns</b>
+
+                    7-day return policy
+
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- STOCK -->
+
+        <div class="stock">
+
+            <span></span>
+
+            Only 7 items left in stock
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<!-- DESCRIPTION -->
+
+<section class="information">
+
+    <div class="tabs">
+
+        <button class="active">
+            DESCRIPTION
+        </button>
+
+        <button>
+            DETAILS
+        </button>
+
+        <button id="reviews">
+            REVIEWS (128)
+        </button>
+
+    </div>
+
+
+    <div class="info-content">
+
+        <h2>
+            MADE FOR TRUE ANIME FANS.
+        </h2>
+
+        <p>
+
+            The YORUVEX Premium Hoodie combines
+            an oversized silhouette with a bold
+            anime-inspired design.
+
+            Built for everyday wear, gaming sessions,
+            conventions and casual streetwear.
+
+        </p>
+
+
+        <div class="specs">
+
+            <div>
+                <span>Material</span>
+                <b>Premium Cotton Blend</b>
+            </div>
+
+            <div>
+                <span>Fit</span>
+                <b>Oversized</b>
+            </div>
+
+            <div>
+                <span>Fabric</span>
+                <b>280 GSM</b>
+            </div>
+
+            <div>
+                <span>Print</span>
+                <b>High-Quality Print</b>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- RELATED -->
+
+<section class="related">
+
+    <div class="section-title">
+
+        <span></span>
+
+        <h2>
+            YOU MAY ALSO LIKE
+        </h2>
+
+        <span></span>
+
+    </div>
+
+
+    <div class="related-grid">
+
+        <article class="related-card">
+
+            <div class="related-image">
+                Y
+            </div>
+
+            <small>
+                APPAREL
+            </small>
+
+            <h3>
+                Anime Oversized T-Shirt
+            </h3>
+
+            <b>
+                ₹999
+            </b>
+
+        </article>
+
+
+        <article class="related-card">
+
+            <div class="related-image">
+                月
+            </div>
+
+            <small>
+                POSTERS
+            </small>
+
+            <h3>
+                Premium Anime Poster
+            </h3>
+
+            <b>
+                ₹799
+            </b>
+
+        </article>
+
+
+        <article class="related-card">
+
+            <div class="related-image">
+                夜
+            </div>
+
+            <small>
+                ACCESSORIES
+            </small>
+
+            <h3>
+                Anime Keychain
+            </h3>
+
+            <b>
+                ₹499
+            </b>
+
+        </article>
+
+
+        <article class="related-card">
+
+            <div class="related-image">
+                V
+            </div>
+
+            <small>
+                GAMING
+            </small>
+
+            <h3>
+                Anime Gaming Mat
+            </h3>
+
+            <b>
+                ₹1,299
+            </b>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div>
+
+        <img src="logo.png">
+
+        <h2>
+            Yoru<span>Vex</span>
+        </h2>
+
+        <p>
+            Anime isn't just a genre.
+            It's a lifestyle.
+        </p>
+
+    </div>
+
+
+    <div>
+
+        <h3>QUICK LINKS</h3>
+
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+
+    </div>
+
+
+    <div>
+
+        <h3>SUPPORT</h3>
+
+        <a href="#">Shipping</a>
+        <a href="#">Returns</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+
+    </div>
+
+</footer>
+
+
+<div class="copyright">
+
+    © 2026 YORUVEX. All Rights Reserved.
+
+</div>
+
+
+<script src="product.js"></script>
+
+</body>
+</html>
