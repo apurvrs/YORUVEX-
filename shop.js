@@ -157,7 +157,7 @@ function renderProducts(list) {
 
 card.className = "product";
 
-card.addEventListener("click", function (e) {
+        card.addEventListener("click", function (e) {
 
     if (
         e.target.closest(".add-cart") ||
@@ -166,7 +166,8 @@ card.addEventListener("click", function (e) {
         return;
     }
 
-    window.location.href = "product.html";
+    window.location.href =
+        "product.html?id=" + index;
 
 });
 
