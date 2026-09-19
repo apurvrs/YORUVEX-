@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop — YORUVEX</title>
+
+    <link rel="stylesheet" href="shop.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="index.html" class="brand">
+
+        <img src="logo.png" alt="YORUVEX">
+
+        <span>
+            Yoru<span>Vex</span>
+        </span>
+
+    </a>
+
+
+    <nav id="navMenu">
+
+        <a href="index.html">Home</a>
+
+        <a href="shop.html" class="active">Shop</a>
+
+        <a href="index.html#categories">Categories</a>
+
+        <a href="index.html#about">About</a>
+
+        <a href="index.html#contact">Contact</a>
+
+    </nav>
+
+
+    <div class="nav-right">
+
+        <div class="search">
+
+            <input
+                id="searchInput"
+                type="text"
+                placeholder="Search products..."
+            >
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+        </div>
+
+
+        <button class="icon-btn">
+
+            <i class="fa-regular fa-user"></i>
+
+        </button>
+
+
+        <button class="icon-btn cart">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <small id="cartCount">0</small>
+
+        </button>
+
+
+        <button
+            class="menu-btn"
+            onclick="toggleMenu()"
+        >
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= SHOP HERO ================= -->
+
+<section class="shop-hero">
+
+    <div class="shop-hero-content">
+
+        <div class="mini-title">
+            YORUVEX STORE
+        </div>
+
+        <h1>
+            EXPLORE THE
+            <span>COLLECTION</span>
+        </h1>
+
+        <p>
+            Discover premium anime merchandise,
+            collectibles, apparel and accessories
+            made for true anime fans.
+        </p>
+
+        <div class="breadcrumb">
+
+            <a href="index.html">Home</a>
+
+            <span>/</span>
+
+            <b>Shop</b>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SHOP ================= -->
+
+<main class="shop-container">
+
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="filter-title">
+
+            <h2>FILTERS</h2>
+
+            <button onclick="clearFilters()">
+                Clear
+            </button>
+
+        </div>
+
+
+        <div class="filter-group">
+
+            <h3>Categories</h3>
+
+            <label>
+                <input
+                    type="checkbox"
+                    value="Apparel"
+                    class="category-filter"
+                >
+                Apparel
+                <span>12</span>
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    value="Figures"
+                    class="category-filter"
+                >
+                Figures
+                <span>08</span>
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    value="Posters"
+                    class="category-filter"
+                >
+                Posters
+                <span>15</span>
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    value="Accessories"
+                    class="category-filter"
+                >
+                Accessories
+                <span>10</span>
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    value="Gaming"
+                    class="category-filter"
+                >
+                Gaming
+                <span>06</span>
+            </label>
+
+        </div>
+
+
+        <div class="filter-group">
+
+            <h3>Price</h3>
+
+            <label>
+                <input type="radio" name="price" value="all" checked>
+                All Prices
+            </label>
+
+            <label>
+                <input type="radio" name="price" value="500">
+                Under ₹500
+            </label>
+
+            <label>
+                <input type="radio" name="price" value="1000">
+                Under ₹1,000
+            </label>
+
+            <label>
+                <input type="radio" name="price" value="2000">
+                Under ₹2,000
+            </label>
+
+        </div>
+
+
+        <div class="filter-banner">
+
+            <span>YORUVEX</span>
+
+            <h3>
+                ANIME
+                <br>
+                LIVES HERE.
+            </h3>
+
+            <p>
+                Premium products for
+                premium fans.
+            </p>
+
+        </div>
+
+    </aside>
+
+
+    <!-- PRODUCTS AREA -->
+
+    <section class="products-area">
+
+
+        <div class="products-top">
+
+            <div>
+
+                <h2>
+                    ALL PRODUCTS
+                </h2>
+
+                <p id="resultText">
+                    Showing 12 products
+                </p>
+
+            </div>
+
+
+            <div class="sort">
+
+                <label for="sortSelect">
+                    Sort:
+                </label>
+
+                <select id="sortSelect">
+
+                    <option value="default">
+                        Featured
+                    </option>
+
+                    <option value="low">
+                        Price: Low to High
+                    </option>
+
+                    <option value="high">
+                        Price: High to Low
+                    </option>
+
+                    <option value="name">
+                        Name: A-Z
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT GRID -->
+
+        <div
+            class="products-grid"
+            id="productGrid"
+        ></div>
+
+
+        <!-- NO PRODUCTS -->
+
+        <div
+            class="no-products"
+            id="noProducts"
+        >
+
+            <i class="fa-solid fa-ghost"></i>
+
+            <h2>
+                NO PRODUCTS FOUND
+            </h2>
+
+            <p>
+                Try another search or category.
+            </p>
+
+            <button onclick="clearFilters()">
+                Reset Filters
+            </button>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <div>
+
+        <small>
+            JOIN THE YORUVEX WORLD
+        </small>
+
+        <h2>
+            STAY IN THE
+            <span>LOOP.</span>
+        </h2>
+
+        <p>
+            Get new drops, exclusive collections
+            and special offers.
+        </p>
+
+    </div>
+
+
+    <form onsubmit="subscribe(event)">
+
+        <input
+            type="email"
+            placeholder="Enter your email"
+            required
+        >
+
+        <button>
+            SUBSCRIBE
+        </button>
+
+    </form>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-brand">
+
+        <img src="logo.png">
+
+        <h2>
+            Yoru<span>Vex</span>
+        </h2>
+
+        <p>
+            Anime isn't just a genre.
+            <br>
+            It's a lifestyle.
+        </p>
+
+        <div class="socials">
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div>
+
+        <h3>QUICK LINKS</h3>
+
+        <a href="index.html">Home</a>
+
+        <a href="shop.html">Shop</a>
+
+        <a href="index.html#categories">
+            Categories
+        </a>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </div>
+
+
+    <div>
+
+        <h3>CATEGORIES</h3>
+
+        <a href="#">Apparel</a>
+
+        <a href="#">Figures</a>
+
+        <a href="#">Posters</a>
+
+        <a href="#">Accessories</a>
+
+        <a href="#">Gaming</a>
+
+    </div>
+
+
+    <div>
+
+        <h3>SUPPORT</h3>
+
+        <a href="#">Shipping</a>
+
+        <a href="#">Returns</a>
+
+        <a href="#">Privacy Policy</a>
+
+        <a href="#">Terms</a>
+
+    </div>
+
+</footer>
+
+
+<div class="copyright">
+
+    © 2026 YORUVEX — All Rights Reserved.
+
+</div>
+
+
+<script src="shop.js"></script>
+
+</body>
+</html>
